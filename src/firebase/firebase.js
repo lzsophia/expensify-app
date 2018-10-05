@@ -74,5 +74,5 @@ database.ref('expenses')
 .on('child_added', (snapshot)=>{
     console.log(snapshot.key, snapshot.val());
 });*/
-
-export {firebase, database as default};
+const googleAuthProvider=new firebase.auth.GoogleAuthProvider();
+export {firebase, googleAuthProvider, database as default};
